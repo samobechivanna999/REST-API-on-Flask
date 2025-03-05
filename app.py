@@ -12,7 +12,7 @@ tasks = [
 def find_task(task_id):
     """
     Ищет задачу по её ID в списке задач.
-    Возвращает задачу, если она найдена, иначе None.
+    
     """
     return next((task for task in tasks if task["id"] == task_id), None)
 
@@ -41,8 +41,8 @@ def get_task(task_id):
 def create_task():
     """
     Создает новую задачу.
-    Тело запроса должно содержать 'title' и 'description'.
     Возвращает созданную задачу и статус 201.
+    
     """
     if not request.json or 'title' not in request.json:
         return jsonify({"error": "Invalid request: 'title' is required"}), 400
@@ -60,7 +60,6 @@ def create_task():
 def update_task(task_id):
     """
     Обновляет задачу по её ID.
-    Тело запроса может содержать 'title' и/или 'description'.
     Возвращает обновленную задачу.
     """
     task = find_task(task_id)
