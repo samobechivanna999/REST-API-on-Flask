@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 # Инициализация списка задач
 tasks = [
-    {"id": 1, "title": "Learn Flask", "description": "Study Flask framework"},
+    {"id": 1, "title": "Learn ML", "description": "Study MLOps"},
     {"id": 2, "title": "Build a REST API", "description": "Create a simple REST API"}
 ]
 
