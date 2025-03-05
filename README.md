@@ -24,14 +24,20 @@
 ```sh
 git clone https://github.com/ваш-ник/flask-todo-api.git
 cd flask-todo-api
+ ```
 
-2️⃣ Создайте и активируйте виртуальное окружение
-sh
+## 2️⃣ Создайте и активируйте виртуальное окружение
+ ```sh
 Копировать
 Редактировать
 python -m venv venv
+ ```
 # Активация на Windows:
+```
 venv\Scripts\activate
+```
 # Активация на macOS/Linux:
+```
 source venv/bin/activate
+```
 
